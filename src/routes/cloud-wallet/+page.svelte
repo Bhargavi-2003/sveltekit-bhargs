@@ -48,6 +48,9 @@
       {#if form?.success}
         <p class="pt-2">Logged In. Your balance is {form?.balance}!</p>
       {/if}
+      {#if form?.error}
+        <p class="pt-2 text-red-600">Error: {form?.error}</p>
+      {/if}
     </div>
 
     <!-- Payment Form -->
@@ -122,7 +125,10 @@
         </button>
       </form>
       {#if form?.success}
-        <p class="pt-2">Payment successful. Here is your transaction {form?.payment}!</p>
+        <p class="pt-2">Payment successful. Here is your <a href ="{form?.payment}" target="_blank" >Transaction</a> !</p>
+      {/if}
+      {#if form?.error}
+        <p class="pt-2 text-red-600">Error: {form?.error}</p>
       {/if}
     </div>
   </div>
