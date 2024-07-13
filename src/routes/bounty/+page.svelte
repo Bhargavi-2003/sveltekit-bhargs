@@ -49,8 +49,8 @@
   <div class="w-full lg:w-1/2">
     <div class="p-4 rounded-lg shadow-xl dark:bg-white/10 bg-white/30 ring-1 ring-gray-900/5 backdrop-blur-lg">
       <form method="POST" action="?/unlock">
-        <div class="flex flex-wrap -mx-3 mb-2 items-end">
-          <div class="w-full md:w-2/3 px-3 mb-6 md:mb-0">
+        <div class="flex flex-wrap -mx-3 mb-2">
+          <div class="w-full px-3 mb-6">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="root">
               Root
             </label>
@@ -62,7 +62,7 @@
               name="root"
             />
           </div>
-          <div class="w-full md:w-1/3 px-3">
+          <div class="w-full px-3">
             <button
               type="submit"
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-2 px-4 py-2 rounded w-full"
@@ -78,4 +78,3 @@
     </div>
   </div>
 </div>
-
