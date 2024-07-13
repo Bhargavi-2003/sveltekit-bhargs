@@ -7,7 +7,7 @@
   <div class="flex flex-wrap">
     <!-- Login Form -->
     <div class="w-full md:w-1/2 p-6">
-      <h1>LOGIN</h1>
+      <strong class="p-30">LOGIN</strong>
       <form method="POST" action="?/login">
         <div class="w-full mb-6">
           <label
@@ -55,7 +55,7 @@
 
     <!-- Payment Form -->
     <div class="w-full md:w-1/2 p-6">
-      <h1>PAYMENT</h1>
+      <strong class="p-30">PAYMENT</strong>
       <form method="POST" action="?/pay">
         <div class="w-full mb-6">
           <label
@@ -125,7 +125,7 @@
         </button>
       </form>
       {#if form?.success}
-        <p class="pt-2">Payment successful. Here is your <a href ="{form?.payment}" target="_blank" >Transaction</a> !</p>
+        <p class="pt-2">Payment successful. Here is your <a href ="{form?.payment}" class="hover:text-blue-600 underline" target="_blank" >Transaction</a> !</p>
       {/if}
       {#if form?.error}
         <p class="pt-2 text-red-600">Error: {form?.error}</p>

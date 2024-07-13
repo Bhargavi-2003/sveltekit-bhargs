@@ -86,7 +86,6 @@
 		{/each}
 	</div>
 </div> -->
-
 <script>
 	export let names;
 	export let form;
@@ -193,4 +192,7 @@
 	  </div>
 	</div>
   </div>
+  
+  
+  
   
